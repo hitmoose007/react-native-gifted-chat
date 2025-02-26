@@ -332,13 +332,7 @@ function MessageContainer<TMessage extends IMessage = IMessage> (props: MessageC
       {isScrollToBottomEnabled
         ? renderScrollToBottomWrapper()
         : null}
-      <DayAnimated
-        scrolledY={scrolledY}
-        daysPositions={daysPositions}
-        listHeight={listHeight}
-        messages={messages}
-        isLoadingEarlier={isLoadingEarlier}
-      />
+   
     </View>
   )
 }
